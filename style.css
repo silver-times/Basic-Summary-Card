@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --paleBlue: hsl(225, 100%, 94%);
+  --brightBlue: hsl(245, 75%, 52%);
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --desaturatedBlue: hsl(224, 23%, 55%);
+  --darkBlue: hsl(223, 47%, 23%);
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card {
+  background-color: white;
+  width: 20rem;
+  padding: 0 0 1rem 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.hero img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+}
+
+.content {
+  padding: 30px;
+}
+
+.content h1 {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--darkBlue);
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-weight: 700;
+  color: var(--desaturatedBlue);
+  line-height: 1.5rem;
+  letter-spacing: 0.2px;
+}
+
+.plan-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--veryPaleBlue);
+  border-radius: 20px;
+  padding: 20px 0;
+  margin: 0 20px;
+}
+
+.new {
+  display: flex;
+  align-items: center;
+}
+
+.plan-box img {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.plan {
+  margin-left: 5px;
+}
+
+.plan-box h1 {
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.plan-box p {
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--desaturatedBlue);
+}
+
+.plan-box a {
+  font-size: 16px;
+  font-weight: 900;
+  margin-right: 10px;
+  color: var(--desaturatedBlue);
+  text-decoration: none;
+}
+
+.plan-box a:hover {
+  color: var(--darkBlue);
+}
+
+.payment {
+  padding: 20px 20px;
+  background-color: var(--brightBlue);
+  color: white;
+  font-weight: 700;
+  margin: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cancel-order p {
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--desaturatedBlue);
+  padding-bottom: 20px;
+}
+
+.cancel-order p:hover {
+  color: var(--darkBlue);
+  cursor: pointer;
+}
